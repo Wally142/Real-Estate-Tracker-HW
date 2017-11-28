@@ -1,0 +1,33 @@
+<input type="text" placeholder="Rent" ng-model="RC.rentIn">
+<input type="text" placeholder="Square Feet" ng-model="RC.feetIn">
+<input type="text" placeholder="City" ng-model="RC.cityIn">
+<button ng-click="RC.postARent()" class="btn btn-primary">Post Listing</button>
+
+
+<h2>For Rent</h2>
+
+<table class="table-striped table table-hover">
+    <thead>
+        <tr>
+            <th class="head">Rent</th>
+            <th class="head">Square Feet</th>
+            <th class="head">City</th>
+            <th class="head">View Picture</th>
+        </tr>
+    </thead>
+
+<tbody id="rent">
+    <tr ng-repeat="listing in RC.fullList.room">
+
+        <td>{{listing.rent}}</td>
+        <td>{{listing.sqft}}</td>
+        <td>{{listing.city}}</td>
+        <td><button class="btn btn-info"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><span>View</span></a></button></td>
+        
+    </tr>
+</tbody>
+</table>
+
+
+
+

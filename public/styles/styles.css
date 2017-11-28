@@ -1,0 +1,52 @@
+body {
+       background: linear-gradient(to right, #abbaab, #ffffff);
+}
+
+h1 {
+    text-align: center;
+    color: #337ab7;
+    font-size: 48px;
+}
+
+p {
+    text-align: center;
+    font-size: 24px;
+}
+
+h2 {
+    text-align: center;
+    color: #337ab7;
+    font-size: 36px;
+}
+
+img {
+    height:200px;
+    width: 200px;
+    }
+
+#house1 {
+    width: 231px;
+}
+
+.greeting {
+    position: relative;
+    top: 25px;
+}
+
+#dev {
+    position: relative;
+    top: 50px;
+    width: 40%;
+    image-rendering: auto;
+    image-rendering: crisp-edges;
+    
+}
+
+span {
+    color: white;
+}
+
+.head {
+    color: #337ab7;
+    font-size: 16px;
+}

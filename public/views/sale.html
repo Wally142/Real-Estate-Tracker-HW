@@ -1,0 +1,29 @@
+<input type="text" placeholder="Cost" ng-model="SC.costIn">
+<input type="text" placeholder="Square Feet" ng-model="SC.feetIn">
+<input type="text" placeholder="City" ng-model="SC.cityIn">
+<button ng-click="SC.postASale()" class="btn btn-primary">Post Listing</button>
+
+<h2>For Sale</h2>
+
+<table class="table-striped table table-hover">
+    <thead>
+        <tr>
+            <th class="head">Cost</th>
+            <th class="head">Square Feet</th>
+            <th class="head">City</th>
+            <th class="head">View Picture</th>
+            
+        </tr>
+    </thead>
+
+    <tbody id="sale">
+        <tr ng-repeat="listing in SC.fullList.home">
+
+            <td>{{listing.cost}}</td>
+            <td>{{listing.sqft}}</td>
+            <td>{{listing.city}}</td>
+            <td><button class="btn btn-info"><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"><span>View</span></a></button></td>
+
+        </tr>
+    </tbody>
+</table>
